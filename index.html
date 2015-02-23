@@ -4,10 +4,13 @@
 </head>
 <body>
   <script>
-    var JJMstock = new Firebase('jjmstock.firebaseio.com');
+    var JJMstock = new Firebase('stockjjm.firebaseio.com');
     var AAPL = "AAPL"
     var date = "Febuary 22, 2015"
     var AAPLpps = "129.50"
+    var ccc = prompt();
+    if (ccc = "e") {
     JJMstock.push({stock: AAPL, date: date, priceashare: AAPLpps});
+    }
   </script>
 </body>
