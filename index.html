@@ -5,12 +5,12 @@
 <body>
   <script>
     var JJMstock = new Firebase('stockjjm.firebaseio.com');
-    var AAPL = "AAPL"
-    var date = "Febuary 22, 2015"
-    var AAPLpps = "129.50"
-    var ccc = prompt();
+    var stock_symbol = prompt("Stock Symbol");
+    var date = prompt("Date");
+    var Sprice = prompt("Stock Price");
+    var ccc = prompt("type e to validate");
     if (ccc = "e") {
-    JJMstock.push({stock: AAPL, date: date, priceashare: AAPLpps});
+    JJMstock.push({stock: stock_symbol, date: date, price_a_share: Sprice});
     }
   </script>
 </body>
