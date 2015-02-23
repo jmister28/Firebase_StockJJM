@@ -1,1 +1,13 @@
-<head
+<head>
+  <script src='https://cdn.firebase.com/js/client/2.0.4/firebase.js'></script>
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+</head>
+<body>
+  <script>
+    var JJMstock = new Firebase('jjmstock.firebaseio.com');
+    var AAPL = "AAPL"
+    var date = "Febuary 22, 2015"
+    var AAPLpps = "129.50"
+    JJMstock.push({stock: AAPL, date: date, priceashare: AAPLpps});
+  </script>
+</body>
